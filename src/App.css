@@ -2,16 +2,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
 
 :root {
-  --bg: #35858E;
-  --surface: #7DA78C;
-  --surface2: #C2D099;
-  --border: #5a9080;
-  --accent: #E6EEC9;
-  --accent-hover: #d5e4b0;
-  --correct: #2d5e4a;
-  --wrong: #b84040;
-  --text: #1a3530;
-  --muted: #3d6558;
+  --bg: #576A8F;
+  --surface: #B7BDF7;
+  --surface2: #FFF8DE;
+  --border: #9aa5d0;
+  --accent: #FF7444;
+  --accent-hover: #e05e30;
+  --correct: #24A628;
+  --wrong: #c03828;
+  --text: #2a3550;
+  --muted: #4a5a80;
   --radius: 12px;
 }
 
@@ -42,14 +42,14 @@ body {
   font-size: 2.8rem;
   font-weight: 800;
   text-align: center;
-  background: linear-gradient(135deg, #C2D099, #E6EEC9);
+  background: linear-gradient(135deg, #B7BDF7, #FFF8DE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
   text-align: center;
-  color: var(--accent);
+  color: #FFF8DE;
   opacity: 0.8;
   margin-top: 6px;
   margin-bottom: 32px;
@@ -133,7 +133,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  color: var(--accent);
+  color: #FFF8DE;
 }
 
 .spinner {
@@ -182,7 +182,7 @@ body {
 }
 
 .difficulty-easy   { color: var(--correct); border-color: var(--correct) }
-.difficulty-medium { color: #7DA78C; border-color: #7DA78C }
+.difficulty-medium { color: #8878d0; border-color: #8878d0 }
 .difficulty-hard   { color: var(--wrong); border-color: var(--wrong) }
 
 .question-text {
@@ -210,10 +210,10 @@ body {
   line-height: 1.4;
 }
 
-.option:hover:not(:disabled) { border-color: var(--accent); background: #d8e8b8 }
+.option:hover:not(:disabled) { border-color: var(--accent); background: #ede8ff }
 
-.option.correct { background: rgba(45,94,74,0.15); border-color: var(--correct); color: var(--correct) }
-.option.wrong   { background: rgba(184,64,64,0.15); border-color: var(--wrong);   color: var(--wrong) }
+.option.correct { background: rgba(36,166,40,0.15);  border-color: var(--correct); color: var(--correct) }
+.option.wrong   { background: rgba(192,56,40,0.15);  border-color: var(--wrong);   color: var(--wrong) }
 .option.dimmed  { opacity: 0.4 }
 .option:disabled { cursor: default }
 
@@ -228,8 +228,8 @@ body {
   gap: 12px;
 }
 
-.feedback.correct { background: rgba(45,94,74,0.2);  color: var(--correct) }
-.feedback.wrong   { background: rgba(184,64,64,0.2); color: var(--wrong) }
+.feedback.correct { background: rgba(36,166,40,0.15);  color: var(--correct) }
+.feedback.wrong   { background: rgba(192,56,40,0.15);  color: var(--wrong) }
 
 .next-btn {
   background: var(--accent);
